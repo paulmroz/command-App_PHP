@@ -21,7 +21,6 @@ class RenderCommand extends Command
     {
         $this->setName('render')
             ->setDescription('Render some tabular data.');
-
     }
 
     public function execute(InputInterface $input, OutputInterface $output)

@@ -8,7 +8,6 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
-
 class Command extends SymfonyCommand
 {
     protected $database;
@@ -32,5 +31,4 @@ class Command extends SymfonyCommand
             ->setRows($tasks)
             ->render();
     }
-
 }

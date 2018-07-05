@@ -5,25 +5,19 @@
 use Symfony\Component\Console\Application;
 use Acme\SayHelloCommand;
 
-
-
-
 require 'vendor/autoload.php';
 
 $app = new Application('Learning Demo', '1.0');
 //$app->add(new SayHelloCommand);
 //$app->add(new Acme\RenderCommand);
 
-try
-{
+try {
     $pdo = new PDO('mysql:host=127.0.0.1;dbname=commandTask', 'root', 'zxc');
 
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (Exception $exception)
-{
+} catch (Exception $exception) {
     echo 'Could not connect to the  database';
     exit(1);
 }

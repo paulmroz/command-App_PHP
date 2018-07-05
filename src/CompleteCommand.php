@@ -20,7 +20,6 @@ class CompleteCommand extends Command
         $this->setName('complete')
             ->setDescription('Complete the task by its id.')
             ->addArgument('id', InputArgument::REQUIRED);
-
     }
 
     public function execute(InputInterface $input, OutputInterface $output)
